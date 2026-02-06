@@ -71,7 +71,7 @@ Este projeto foi desenhado para ser "Plug & Play". Graças ao Docker, você não
 
 ```bash
 git clone https://github.com/felipeerocha/project-cb.git
-cd cb-lab
+cd project-cb
 ```
 
 #### 2. Configuração de Variáveis de Ambiente
