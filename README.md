@@ -152,6 +152,8 @@ O planejamento completo dos cenários de teste (incluindo entradas, saídas espe
    ```
     2 . Execute os testes: Com as dependências instaladas, basta rodar:
    ```bash
+   cd tests
+   
    pytest -v
    ```
 
