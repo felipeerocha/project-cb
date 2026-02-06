@@ -135,14 +135,22 @@ O planejamento completo dos cenários de teste (incluindo entradas, saídas espe
 
 ### 🧪 Como Rodar os Testes
 
-1. Acesse a pasta do backend e ative seu ambiente virtual (se não estiver usando Docker):
+1. **Prepare o ambiente (caso ainda não tenha feito):**
+   Acesse a pasta do backend, ative o ambiente virtual e **instale as dependências**:
+
    ```bash
    cd backend
+
+   # Cria o ambiente virtual 
+   python -m venv venv
+   # Ativa o ambiente
    source venv/bin/activate  # Linux/Mac
    # ou
-   venv\Scripts\activate     # Windows
+   venv\Scripts\activate   # Windows
+   # Instala os pacotes necessários 
+   pip install -r requirements.txt
    ```
-
+    2 . Execute os testes: Com as dependências instaladas, basta rodar:
    ```bash
    pytest -v
    ```
