@@ -135,7 +135,7 @@ O planejamento completo dos cenários de teste (incluindo entradas, saídas espe
 
 ### 🧪 Como Rodar os Testes
 
-1. **Prepare o ambiente (caso ainda não tenha feito):**
+1. **Prepare o ambiente:**
    Acesse a pasta do backend, ative o ambiente virtual e **instale as dependências**:
 
    ```bash
