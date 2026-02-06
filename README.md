@@ -119,6 +119,36 @@ O banco já vem populado com usuários de teste:
 
 ---
 
+## ✅ Testes Automatizados
+
+Para garantir a confiabilidade e segurança do sistema, foi implementada uma suíte de testes de integração utilizando **Pytest**.
+
+Os testes focam nas **Regras de Negócio Críticas**, como:
+* Validação de permissões (ACL) entre Admin e Usuário Comum.
+* Bloqueio de edição em reservas já aprovadas.
+* Integridade referencial (não permitir deletar unidades com reservas em analise).
+
+### 📄 Documentação de Casos de Teste
+O planejamento completo dos cenários de teste (incluindo entradas, saídas esperadas e status codes) pode ser visualizado no documento abaixo:
+
+👉 **[Ver Documentação de Casos de Teste (PDF)](https://drive.google.com/file/d/1p4wAywsHSIwXEahn65oqh-OLJRx1-86K/view?usp=drive_link)**
+
+### 🧪 Como Rodar os Testes
+
+1. Acesse a pasta do backend e ative seu ambiente virtual (se não estiver usando Docker):
+   ```bash
+   cd backend
+   source venv/bin/activate  # Linux/Mac
+   # ou
+   venv\Scripts\activate     # Windows
+   ```
+
+   ```bash
+   pytest -v
+   ```
+
+---
+
 ## 📂 Estrutura do Projeto
 
 ```bash
@@ -127,6 +157,7 @@ CB-LAB/
 ├── .env.example         # Variáveis globais
 ├── backend/             # API REST (FastAPI)
 │   ├── app/             # Models, Schemas e Routers
+│   ├── tests/           # testes integração
 │   ├── init.sql         # Seed automático do banco
 │   ├── .env.example     # Variáveis do backend
 │   └── Dockerfile       # Imagem Python
