@@ -70,7 +70,7 @@ Este projeto foi desenhado para ser "Plug & Play". Graças ao Docker, você não
 #### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/cb-lab.git
+git clone https://github.com/felipeerocha/project-cb.git
 cd cb-lab
 ```
 
